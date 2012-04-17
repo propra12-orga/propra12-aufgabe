@@ -2,10 +2,66 @@
 \vorlesung{Programmierpraktikum}
 \semester{Sommersemester 2012}
 \betreuer{Wilfried Linder}
-\subtitle{Aufgabenstellung}
+\subtitle{Bomberman}
 
 \begin{document}
 
 \maketitle
-
+Erstellt werden soll eine Neuimplementation des bekannten Spiels Bomberman. Bei diesem Spiel
+geht es darum, sich mit einer Spielfigur durch ein Labyrinth zu bewegen und durch Verwendung der
+Bomben Gegner und Hindernisse zu überwinden.
+%
+\section{Spielprinzip nach Wikipedia}
+In der klassischen Variante besteht das Spielfeld aus einer Anordnung von zerstörbaren und
+unzerstörbaren Wänden. Durch das Legen von Bomben können somit immer mehr Bereiche des
+Spielfelds erschlossen werden. Hinter einigen Wänden verstecken sich Bonusgegenstände. Die
+wichtigsten, die in nahezu jeder Version vorkommen, sind die Bombe, mit ihr erhält der Spieler die
+Möglichkeit, eine zusätzliche Bombe zeitgleich zu legen (maximal 8). Eine Flamme erhöht die
+Reichweite einer Bombe um ein Feld. Zudem gibt es sogenannte Megabomben, Minen oder
+ferngesteuerte Bomben. In manchen Versionen gibt es als Powerup einen Handschuh, der es
+Bomberman ermöglicht, Bomben aufzunehmen und zu werfen. Je nach Version kann man entweder
+mit einem Boxhandschuh oder mit einem Fuß (Bombenkick-Item) Bomben bis zur nächstgelegenen
+Wand wegstoßen.
+Die Explosion wird durch Feuerstrahlen in alle vier Richtungen des zweidimensionalen Raums
+dargestellt und bringt andere Bomben (falls sie durch die Sprengkraft erreicht werden) zur
+sofortigen Zündung, was gewisse Taktiken ermöglicht und erfordert. In den meisten Spielversionen
+muss der Spieler sich innerhalb einer bestimmten Zeit zum Ausgang begeben. Dieser ist innerhalb
+der zerstörbaren Wände versteckt. Er kann erst betreten werden, nachdem alle Gegner zerstört
+wurden.
+Ein beliebter Spielmodus von Bomberman ist auch der Mehrspielermodus, in welchem alle
+Mitspieler besiegt werden müssen.
+%
+\section{Mindestanforderungen}
+Für den ersten Meilenstein müssen bereits bestimmte Mindestanforderungen erfüllt werden. Diese
+Anforderungen sind nur ein Überblick. Das Spiel darf gerne mehr können oder andere Varianten
+implementieren. Bitte mit dem Übungsgruppenleiter absprechen.
+Die Mindestanforderungen sind:
+\begin{itemize}
+  \item Darstellung eines Spielfelds in 2D. Dabei müssen zunächst nur feste Mauerstücke implementiert sein, der Ausgang darf dann offensichtlich sein,
+  \item Steuerung einer Figur durch das Spielfeld,
+  \item Implementation einer Bombe mit festem Radius,
+  \item Automatisches Neustarten eines Spiels nach Sieg oder Niederlage, Menüführung.
+\end{itemize}
+Zusätzlich zu diesen Anforderungen wird es im Laufe des Praktikums einen Katalog weiterer
+Anforderungen geben, von denen einzelne Ausgewählt und Implementiert werden sollen. Da dabei
+auch frei gewählte Erweiterungen erlaubt sein werden, lohnt es sich, bis zum ersten Meilenstein
+bereits mehr als die Mindestanforderungen zu erfüllen.
+Anregungen für weitere Leistungen wären Beispielsweise:
+\begin{itemize}
+  \item Steuerung einer weiteren Spielfigur
+  \item per Tastatur
+  \item über das Netzwerk
+  \item oder automatische Gegner / Bots
+  \item Implementationen verschiedener Bomben, Handschuhe, etc
+  \item Implementation weiterer Arten von Mauern
+  \item Einlesen der Level aus Dateien
+\end{itemize}
+\section{Bitte Beachten}
+Abgesehen von den inhaltlichen Anforderungen gibt es noch einige formale Anforderungen an das
+Projekt:
+\begin{itemize}
+  \item Implementierung erfolg in Java, wenn nicht anders abgesprochen. Weitere Programmiersprachen sind absolut erlaubt. Da aber nicht jeder Tutor jede Sprache beherrscht und im Zweifelsfalle Support leisten kann, muss eine von Java abweichende Wahl der Programmiersprache mit uns abgesprochen werden.
+  \item Die Verwendung von Bibliotheken, die nicht zum Sprachumfang des normalen JDKs gehören sollten bitte ebenfalls mit uns abgesprochen werden. Ausnahme hiervon ist die Verwendung von Junit zur Implementation von Unittests.
+  \item Das Projekt ist als Gruppenarbeit gedacht und soll auch als solche durchgeführt werden.  Eine Aufteilung der Aufgaben auf die Gruppe ist Pflicht und soll auch mit den Tutoren abgesprochen werden.
+\end{itemize}
 \end{document}
