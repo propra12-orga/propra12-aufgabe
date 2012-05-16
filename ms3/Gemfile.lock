@@ -1,0 +1,28 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    blankslate (2.1.2.4)
+    ffi (1.0.11)
+    guard (1.0.1)
+      ffi (>= 0.5.0)
+      thor (~> 0.14.6)
+    guard-rake (0.0.5)
+      guard
+      rake
+    pygments.rb (0.2.11)
+      rubypython (~> 0.5.3)
+    rake (0.9.2.2)
+    redcarpet (2.1.1)
+    rubypython (0.5.3)
+      blankslate (>= 2.1.2.3)
+      ffi (~> 1.0.7)
+    thor (0.14.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  guard
+  guard-rake
+  pygments.rb
+  redcarpet
