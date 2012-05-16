@@ -7,51 +7,21 @@
 \begin{document}
 
 \maketitle
-Erstellt werden soll eine Neuimplementierung des bekannten Spiels Bomberman. Bei diesem Spiel
-geht es darum, sich mit einer Spielfigur durch ein Labyrinth zu bewegen und durch Verwendung der
-Bomben Gegner und Hindernisse zu überwinden.
+Zusätzlich zu den Zielen in Meilenstein 2, sollen weitere Ziele erfüllt werden:
 %
-\section{Spielprinzip nach Wikipedia}
-In der klassischen Variante besteht das Spielfeld aus einer Anordnung von zerstörbaren und
-unzerstörbaren Wänden. Durch das Legen von Bomben können somit immer mehr Bereiche des
-Spielfelds erschlossen werden. Hinter einigen Wänden verstecken sich Bonusgegenstände. Die
-wichtigsten, die in nahezu jeder Version vorkommen, sind die Bombe, mit ihr erhält der Spieler die
-Möglichkeit, eine zusätzliche Bombe zeitgleich zu legen (maximal 8). Eine Flamme erhöht die
-Reichweite einer Bombe um ein Feld. Zudem gibt es sogenannte Megabomben, Minen oder
-ferngesteuerte Bomben. In manchen Versionen gibt es als Powerup einen Handschuh, der es
-Bomberman ermöglicht, Bomben aufzunehmen und zu werfen. Je nach Version kann man entweder
-mit einem Boxhandschuh oder mit einem Fuß (Bombenkick-Item) Bomben bis zur nächstgelegenen
-Wand wegstoßen.
-Die Explosion wird durch Feuerstrahlen in alle vier Richtungen des zweidimensionalen Raums
-dargestellt und bringt andere Bomben (falls sie durch die Sprengkraft erreicht werden) zur
-sofortigen Zündung, was gewisse Taktiken ermöglicht und erfordert. In den meisten Spielversionen
-muss der Spieler sich innerhalb einer bestimmten Zeit zum Ausgang begeben. Dieser ist innerhalb
-der zerstörbaren Wände versteckt. Er kann erst betreten werden, nachdem alle Gegner zerstört
-wurden.
-Ein beliebter Spielmodus von Bomberman ist auch der Mehrspielermodus, in welchem alle
-Mitspieler besiegt werden müssen.
-%
-\section{Mindestanforderungen \& erster Meilenstein}
-Für den ersten Meilenstein müssen bereits bestimmte Mindestanforderungen erfüllt werden:
+\section{dritter Meilenstein}
+Wie für den Zweiten müssen auch für den dritten Meilenstein bestimmte Mindestanforderungen erfüllt werden:
 \begin{enumerate}
-  \item Darstellung eines Spielfelds in 2D. Dabei müssen zunächst nur feste Mauerstücke implementiert sein, der Ausgang darf dann offen zugänglich sein.
-  \item Steuerung einer Figur durch das Spielfeld.
-  \item Implementierung einer Bombe mit festem Radius.
-  \item Automatisches Neustarten eines Spiels nach Sieg oder Niederlage, Menüführung.
+  \item Zwei Spieler sollen über das Netzwerk miteinander spielen können,
+  \item Benutzerhandbuch und Dokumentation müssen vorhanden sein,
+  \item Aus der zur Verfügung gestellten Liste müssen Zusatzaufgaben im Wert von XYZ Punkten erreicht worden sein und
+  \item das Spiel darf nicht mehr als ASCII-Art vorliegen. Eine grafische Ausgabe ist Pflicht!
 \end{enumerate}
-Stichtag für den ersten Meilenstein ist der \textbf{Übungstermin in der Woche vom 21. -- 26. Mai 2012}
+Stichtag für den dritten Meilenstein ist der \textbf{Übungstermin in der Woche vom XYZ. -- XYZ. Juli 2012}
 \section{Zusatzanforderungen}
-Zusätzlich zu diesen Anforderungen wird es im Laufe des Praktikums einen Katalog weiterer Anforderungen geben, von denen einzelne ausgewählt und implementiert werden sollen. Dabei werden auch frei gewählte Erweiterungen erlaubt sein, wobei die Wertung dann in Absprache mit dem Übungsgruppenleiter erfolgt. Es lohnt sich also, bis zum ersten Meilenstein bereits mehr als die Mindestanforderungen zu erfüllen.
-Beispiele:
-\begin{itemize}
-  \item Steuerung einer weiteren Spielfigur (Tastatur, Netzwerk, Computergegner)
-  \item Implementierung verschiedener Bomben, Handschuhe, etc
-  \item Implementierung weiterer Arten von Mauern
-  \item Einlesen der Level aus Dateien
-\end{itemize}
-\emph{Diese Anforderungen sind Zusatzanforderungen und müssen zum ersten Meilenstein nicht erfüllt sein.}
+Der dritte Meilenstein schließt die Anforderungen an das Programm ab. Es wird keine weiteren Anforderungen geben.
 \section{Formales}
-Abgesehen von den inhaltlichen Anforderungen gibt es noch einige formale Anforderungen an das Projekt:
+Abgesehen von den inhaltlichen Anforderungen gibt es noch einige formale Anforderungen an das Projekt - diese haben sich bisher nicht geändert:
 \begin{itemize}
   \item Die Implementierung erfolgt in Java, wenn nicht anders abgesprochen. Wei\-te\-re Pro\-gram\-mier\-sprachen sind erlaubt. Da aber nicht jeder Tutor jede Sprache beherrscht und im Zweifelsfall Support leisten kann, muss eine von Java abweichende Wahl der Programmiersprache mit uns abgesprochen werden.
   \item Die Verwendung von Bibliotheken, die nicht zum Sprachumfang des normalen JDKs gehören, sollte bitte ebenfalls mit uns abgesprochen werden. Ausnahme hiervon ist die Verwendung von JUnit zur Implementierung von Unittests.
